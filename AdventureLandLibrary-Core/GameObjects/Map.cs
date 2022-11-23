@@ -192,7 +192,8 @@ namespace AdventureLandLibrary.GameObjects
 
             var transporterMaps = transportPlaces.Properties().Select(p => p.Name);
 
-            if(MapID == "goobrawl")
+            //GooBrawl is special since it has a teleporter NPC (Aria), but is not listed in the available list, add it temporarily. --Zinal
+            if (MapID == "goobrawl")
             {
                 var lst = transporterMaps.ToList();
                 lst.Add("goobrawl");
@@ -231,6 +232,7 @@ namespace AdventureLandLibrary.GameObjects
                 }
             }
 
+            //GooBrawl is special since it has a teleporter NPC (Aria), but is not listed in the available list, remove it again. --Zinal
             if (MapID == "goobrawl")
                 transportPlaces.Remove(MapID);
         }

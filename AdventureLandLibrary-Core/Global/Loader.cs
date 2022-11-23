@@ -96,6 +96,8 @@ namespace AdventureLandLibrary.Global
                 DownloadAndSaveJSFile("keyboard.js", (int)json.version);
             }
 
+            //GooBrawl only has one spawn, which is in the center of the map (0, 0).. This will not work when calculating paths from the map since Aria is in another location,
+            //Add a fake spawn to the GooBrawl map, near Aria. --Zinal
             try
             {
                 JArray goobrawl_spawns = (JArray)json.maps.goobrawl.spawns;

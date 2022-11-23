@@ -134,6 +134,7 @@ namespace AdventureLandLibrary.GameObjects
                 {
                     var mapPath = world.GetPath(StartMap, EndMap);
 
+                    //The path might be empty for a broken path, return an empty path in that case. --Zinal
                     if (!mapPath.Any())
                         return new PathNode[0];
 
