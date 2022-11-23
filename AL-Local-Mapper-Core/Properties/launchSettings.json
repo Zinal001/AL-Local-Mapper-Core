@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "AL-Local-Mapper-Core": {
+      "commandName": "Project",
+      "commandLineArgs": "-load"
+    }
+  }
+}

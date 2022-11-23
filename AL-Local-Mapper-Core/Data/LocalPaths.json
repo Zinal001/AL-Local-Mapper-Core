@@ -1,0 +1,60 @@
+﻿[
+  {
+    "MapName": "main",
+    "Description": "A path that uses The Underground [Tunnel] path when moving from town to Spiders on the main map (Instead of walking around the map).",
+    "BiDirectional": false,
+    "Pos1": {
+      "X1": -1470,
+      "Y1": -854,
+      "X2": 500,
+      "Y2": 551
+    },
+    "Pos2": {
+      "X1": 547,
+      "Y1": -860,
+      "X2": 2228,
+      "Y2": 800
+    },
+    "OptimizePath": false,
+    "Path": [
+      {
+        "Type": "Move",
+        "X": 237,
+        "Y": 10,
+        "MapName": "mtunnel"
+      },
+      {
+        "Type": "Move",
+        "X": 590,
+        "Y": 10,
+        "MapName": "mtunnel"
+      },
+      {
+        "Type": "Move",
+        "X": 597,
+        "Y": -19,
+        "MapName": "mtunnel"
+      },
+      {
+        "Type": "Move",
+        "X": 667,
+        "Y": -82,
+        "MapName": "mtunnel"
+      },
+      {
+        "Type": "Move",
+        "X": 667,
+        "Y": -230,
+        "MapName": "mtunnel"
+      },
+      {
+        "Type": "Teleport",
+        "X": 968,
+        "Y": -577,
+        "MapName": "mtunnel",
+        "ToMapName": "main",
+        "SpawnIndex": 17
+      }
+    ]
+  }
+]

@@ -1,0 +1,66 @@
+﻿{
+  /*
+  The local port number to bind the server to.
+
+  Type: Integer
+  Default: 42805
+  */
+  "ServerPort": 42805,
+
+  /*
+  The lowest level of messages that should be logged to file.
+  Accepted Values: Debug, Info, Warning, Error, None
+
+  Type: String
+  Default: Info
+  */
+  "LogLevel": "Info",
+
+  /*
+  The folder path of where logs should be stored.
+
+  Type: String
+  Default: %appdata%\\Zinals.tech\\AL-Mapper\\Logs\\
+  */
+  "LogPath": "Logs",
+
+  /*
+  Should the local service be started with windows?
+
+  Type: Boolean
+  Default: true
+  */
+  "StartWithWindows": true,
+
+  /*
+  Should the pathfinding be optimized by default? (Removes duplicate nodes, etc)
+
+  Type: Boolean
+  Default: true
+  */
+  "OptimizePath": true,
+
+  /*
+  Should the pathfinding service check if going to town is faster than just walking to the destination?
+
+  Type: Boolean
+  Default: true
+  */
+  "CheckTown": true,
+
+  /*
+  Should the pathfinding service cache paths that have been used before?
+  
+  Type: Boolean
+  Default: true
+  */
+  "CachePaths": true,
+
+  /*
+  How many minutes should a path be cached (If CachePaths is true) before the path is removed from cache?
+
+  Type: Integer
+  Default: 5
+  */
+  "CacheTime": 5
+}
